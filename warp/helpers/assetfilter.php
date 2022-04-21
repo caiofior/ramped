@@ -149,15 +149,15 @@ class WarpAssetFilterCollection implements WarpAssetFilterInterface, Iterator {
 		return $this->filters->key();
 	}
 
-	public function valid() {
+	public function valid() : bool {
 		return $this->filters->valid();
 	}
 
-	public function next() {
+	public function next() : void {
 		$this->filters->next();
 	}
 
-	public function rewind() {
+	public function rewind() : void {
 		$this->filters->rewind();
 	}
 

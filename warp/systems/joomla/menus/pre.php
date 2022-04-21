@@ -27,7 +27,7 @@ class WarpMenuPre extends WarpMenu {
 
 		// init vars
 		$menu   = JFactory::getApplication()->getMenu();
-		$images = strpos($module->parameter->get('class_sfx'), 'images-off') === false;        
+		$images = strpos($module->parameter->get('class_sfx')??'', 'images-off') === false;        
 
 		foreach ($element->find('li') as $li) {
 
@@ -47,7 +47,7 @@ class WarpMenuPre extends WarpMenu {
 			}
 
 			// set columns and width
-			if (isset($item) && strpos($item->params->get('pageclass_sfx'), 'column') !== false) {
+			if (isset($item) && strpos($item->params->get('pageclass_sfx')??'', 'column') !== false) {
 
 				if (preg_match('/columns-(\d+)/', $item->params->get('pageclass_sfx'), $matches)) {
 					$li->attr('data-menu-columns', $matches[1]);

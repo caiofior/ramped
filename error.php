@@ -17,6 +17,8 @@ $warp = Warp::getInstance();
 
 // set messages
 $title   = $this->title;
+$error = '';
+$message = '';
 if(method_exists($this->error,'get')){
    $error   = $this->error->get('code');
    $message = $this->error->get('message');

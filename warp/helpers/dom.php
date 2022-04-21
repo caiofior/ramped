@@ -188,17 +188,17 @@ class WarpDOMElement extends DOMElement {
 		return $this;
 	}
 	
-	public function before($data) {
+	public function before(...$nodes) : void {
 
-		$data = $this->prepareInsert($data);
+		$data = $this->prepareInsert($nodes);
 		$this->parentNode->insertBefore($data, $this);
 
-		return $this;
+		//return $this;
 	}
 
-	public function after($data) {
+	public function after(...$nodes) : void {
 
-		$data = $this->prepareInsert($data);
+		$data = $this->prepareInsert($nodes);
 
 		if (isset($this->nextSibling)) {
 			$this->parentNode->insertBefore($data, $this->nextSibling);
@@ -206,12 +206,12 @@ class WarpDOMElement extends DOMElement {
 			$this->parentNode->appendChild($data);
 		}
 
-		return $this;
+		//return $this;
 	}
 
-	public function prepend($data) {
+	public function prepend(...$nodes) : void {
 
-		$data = $this->prepareInsert($data);
+		$data = $this->prepareInsert($nodes);
 
 		if (isset($data)) {
 			if ($this->hasChildren()) {
@@ -221,18 +221,18 @@ class WarpDOMElement extends DOMElement {
 			}
 		}
 
-		return $this;
+		//return $this;
 	}
 
-	public function append($data) {
+	public function append(...$nodes) : void {
 
-		$data = $this->prepareInsert($data);
+		$data = $this->prepareInsert($nodes);
 
 		if (isset($data)) {
 			$this->appendChild($data);
 		}
 
-		return $this;
+		//return $this;
 	}
 
 	public function wrap($data) {

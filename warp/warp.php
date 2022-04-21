@@ -142,15 +142,15 @@ class Warp implements ArrayAccess {
 		return $this->getHelper($name);
 	}
 
-	public function offsetSet($name, $helper) {
+	public function offsetSet($name, $helper) : void {
 		$this->_helpers[$name] = $helper;
 	}
 
-	public function offsetUnset($name) {
+	public function offsetUnset($name) : void {
 		unset($this->_helpers[$name]);
 	}
 
-	public function offsetExists($name) {
+	public function offsetExists($name) : bool {
 		return !empty($this[$name]);
 	}
 

@@ -224,7 +224,7 @@ abstract class WarpAssetOptions implements ArrayAccess {
 
 	/* ArrayAccess interface implementation */
 
-	public function offsetSet($name, $value) {
+	public function offsetSet($name, $value) : void {
 		$this->options[$name] = $value;
 	}
 
@@ -232,11 +232,11 @@ abstract class WarpAssetOptions implements ArrayAccess {
 		return isset($this->options[$name]) ? $this->options[$name] : null;
 	}
 
-	public function offsetExists($name) {
+	public function offsetExists($name) : bool {
 		return isset($this->options[$name]);
 	}
 
-	public function offsetUnset($name) {
+	public function offsetUnset($name) : void {
 		unset($this->options[$name]);
 	}
 

@@ -92,7 +92,7 @@ class SystemWarpHelper extends WarpHelper {
 			$this->config->set('site_name', $this->application->getCfg('sitename'));
 			$this->config->set('datetime', JHTML::_('date', 'now', 'Y-m-d'));
 			$this->config->set('actual_date', JHTML::_('date', 'now', JText::_('DATE_FORMAT_LC')));
-			$this->config->set('page_class', trim(preg_replace(array('/columns-(\d+)/', '/columnwidth-(\d+)/'), array('', ''), $this->application->getParams()->get('pageclass_sfx'))));
+			$this->config->set('page_class', trim(preg_replace(array('/columns-(\d+)/', '/columnwidth-(\d+)/'), array('', ''), ($this->application->getParams()->get('pageclass_sfx')??''))));
 
 			// Outdated Browser page ?
 			if (($this['config']->get('ie6page') && $this['browser']->isIE6()) || ($this['config']->get('outdated_browser') && $this['browser']->outdatedBrowser())) {

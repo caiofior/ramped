@@ -85,15 +85,15 @@ class WarpHelper implements ArrayAccess {
 		return $this->warp[$name];
 	}
 
-	public function offsetSet($name, $helper) {
+	public function offsetSet($name, $helper) : void {
 		$this->warp[$name] = $helper;
 	}
 
-	public function offsetUnset($name) {
+	public function offsetUnset($name) : void {
 		unset($this->warp[$name]);
 	}
 
-	public function offsetExists($name) {
+	public function offsetExists($name) : bool {
 		return !empty($this->warp[$name]);
 	}
 
