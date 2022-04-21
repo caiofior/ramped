@@ -1,0 +1,35 @@
+/* 
+    Document   : caiofior
+    Created on : 8-apr-2013, 15.32.36
+    Author     : caiofior
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.content table {
+    border-collapse: separate!important;
+    border-top-color: #993300;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-color: #993300;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.content table thead tr {
+    background-color: #dd8156;
+}
+.content table td {
+    margin: 1px;
+    padding: 1px;
+    border-left-color: #993300;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-bottom-color: #993300;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.address ul li div,
+.contact ul li div {
+    float: left;
+    width: 60px;
+}

@@ -1,0 +1,304 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Custom Style Sheet - Use this file to style your content
+ */
+
+body {
+	background:url("../images/bg_pattern.png") #7A9554;
+	font-size: 13px;
+	color:#3B3B3B;
+}
+.wrapper {
+	box-shadow: 0 0 13px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 13px rgba(0, 0, 0, 0.3);
+	background-color:#FFFFFF;
+}
+h1 {
+    font-size: 26px;
+    line-height: 26px;
+}
+#system .item > header .meta {
+	font-size:12px;
+}
+#header {
+	margin-bottom:0px;
+}
+#menubar {
+	font-size:1em;
+	letter-spacing:1px;
+	margin-left:-15px;
+	margin-right:-15px;
+	border-bottom: 4px solid #72B626;
+	height:40px;
+	background-color:#505050;
+}
+.menu-dropdown a.level1, .menu-dropdown span.level1 {
+	border-width:0px;
+	color:#FFFFFF;
+}
+.menu-dropdown a.level1 > span, .menu-dropdown span.level1 > span {
+	height: 40px;
+    line-height: 40px;
+}
+.menu-dropdown .dropdown-bg > div {
+	background-color:#505050;
+}
+.menu-dropdown a.level2, .menu-dropdown span.level2 {
+    color:#FFFFFF;
+}
+.menu-dropdown li.level2:hover .level2 {
+	color:#FFFFFF;
+	background-color:#72B626;
+	margin-left:-10px;
+	margin-right:-10px;
+	padding-left:10px;
+}
+.menu-dropdown a.level2 > span, .menu-dropdown span.level2 > span {
+	margin: 1px 5px;
+}
+.menu-dropdown li.level1:hover .level1,
+.menu-dropdown li.remain .level1,
+.menu-dropdown li.active .level1 {
+	color:#72B626;
+}
+.menu-dropdown .dropdown {
+    border-top: 2px solid #92B800;
+}
+.menu-dropdown a.level1, .menu-dropdown span.level1 {
+	background:url("../images/menu_line_item_2.png") no-repeat right center;
+}
+.menu-dropdown li.level2 {
+	border-top-width:0px;
+}
+/* Menu css ends */
+
+/* Image Slider css start */
+.image_slider {
+	padding:0px;
+	margin:0px;
+}
+.module .mod-box .image_slider .deepest {
+	background-color:#FFFFFF;
+}
+form, textarea  {
+    background-color: #FFFFFF;
+    padding: 7px;
+}
+.highlighttext {
+	background-color:#F4F7F1;
+	font-size:18px;
+	line-height:30px;
+	text-align: center;
+	font-family:Georgia, Arial, sans-serif;
+}
+/* Image Slider css ends */
+
+/* Module level css styling starts */
+#top-a .mod-box, #top-b .mod-box, #top-c .mod-box,
+#bottom-a .mod-box, #bottom-b .mod-box {
+	border-width:0px;
+}
+#bottom-a .module-title, #top-a .module-title {
+	background:url("../images/heading_dots.png") repeat-x;
+	font-size: 15px;
+    font-weight: bold;
+}
+
+#top-b .module-title {
+	font-size: 17px;
+    font-weight: bold;
+}
+#top-a, #top-b{
+	background:url("../images/section_shadow.png") no-repeat center bottom;
+	padding-bottom: 30px;
+}
+#bottom-a {
+	background:url("../images/section_shadow.png") no-repeat center top;
+}
+#bottom-b {
+	background-color: #F4F7F1;
+	color:#000000;
+}
+#bottom-b a {
+	color:#76A300;
+}
+#bottom-b ul.line > li {
+    border-bottom: 1px dotted #404040;
+	border-top-width:0px;
+}
+#top-a .module-title span, 
+#top-b .module-title span {
+	background-color:#FFFFFF;
+	padding-right:10px;
+	padding-top: 3px;
+}
+#bottom-a .module-title span {
+	background-color:#FFFFFF;
+	padding-right:10px;
+	padding-top: 3px;
+	margin-right: 2px;
+}
+#toolbar {
+	background-color:#505050;
+	color:#FFFFFF;
+	padding:7px;
+	margin-left:-15px;
+	margin-right:-15px;
+	margin-top:-15px;
+}
+#toolbar a {
+	color:#FFFFFF;
+	margin:2px;
+}
+#toolbar a:hover {
+	color:#DDDDDD;
+}
+.bdrright {
+	border-right:1px solid #DDDDDD;
+}
+/* Module level css styling ends */
+
+/* Sidebar css start */
+#sidebar-a .module .module-title, #sidebar-b .module .module-title, 
+#innerbottom .module .module-title, #innertop .module .module-title  {
+	background-color:#ECF1E6;
+	margin:-15px -15px 15px -15px;
+	font-size: 17px;
+	color:#4D8014;
+	font-weight: bold;
+	padding: 8px 5px 8px 15px;
+}
+#sidebar-a .mod-box, #sidebar-b .mod-box,
+#innertop .mod-box, #innerbottom  .mod-box {
+    background-color: #F4F7F1;
+	border-width: 0px;
+}
+/* Sidebar css ends */
+
+/* ReadMore links css starts */
+.links a {
+	background-color:#72B626;
+	padding:6px;
+	color:#FFFFFF;
+}
+.links a:hover {
+	background-color:#505050;
+	color:#FFFFFF;
+}
+/* ReadMore links css ends */
+
+/* Pagination starts */
+#system .pagination strong {
+	background-color:#72B626;
+	color:#FFFFFF;
+	border:none;
+}
+#system .pagination a {
+	border: none;
+	color:#717171;
+}
+#system .pagination a:hover {
+	background-color:#72B626;
+	color:#FFFFFF;
+}
+/* Pagination ends */
+
+/* Other elements css styling starts */
+.breadcrumbs {
+	padding: 5px;
+	border: 1px solid #DDDDDD;
+	background-color:#F5F5F5;
+}
+.homestyle #breadcrumbs {
+	display: none;
+}
+.licinfo {
+	color: #7A9554;
+	font-size:10px;
+}
+.licinfo a, .licinfo a:hover {
+	color: #7A9554;
+}
+.searchbox {
+    width: 75%;
+	border:1px solid #ACC097;
+}
+#search {
+    background-color: #F4F7F1;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+.socialicons img {
+	padding-right:4px;
+}
+blockquote {
+	background:#f9f9f9;
+	border-left:10px solid #ccc;
+	margin:1.5em 10px;
+	padding:.5em 10px;
+	quotes:"\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+	color:#ccc;
+	font-size:4em;
+	line-height:.1em;
+	margin-right:.25em;
+	vertical-align:-.4em;
+}
+blockquote p {
+	display:inline;
+}
+/* Other elements css styling ends */
+
+/* News Show Pro GK4 css starts */
+.nspArt h4.nspHeader {
+	font-size: 13px;
+    padding: 10px 0;
+}
+#main .content img, .nspArt img.nspImage {
+	border:1px solid #DDDDDD;
+	padding:3px;
+}
+/* News Show Pro GK4 css ends */
+
+/* Accordin Module css starts*/
+.sp-accordion.sp-accordion-style4 .toggler {
+	background:none;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 5px;
+    padding: 2px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color:#F2F2F2;
+}
+.sp-accordion.sp-accordion-style4 .toggler span span {
+	background:url("../images/plus.png") no-repeat 100% 50%;
+	padding: 0 5px;
+}
+/* Accordin Module css ends*/
+
+/* Custom Module Style css begins */
+.mod-imgslider {
+	padding: 0px;
+	margin: 0px;
+}
+/* Custom Module Style css ends */
+
+/* Footer css starts */
+#footer {
+	background-color:#303030;
+	padding:15px;
+	color:#AAAAAA;
+	margin:0px;
+	border-top:4px solid #72B626;
+}
+#footer a {
+	color:#AAAAAA;
+}
+#footer a:hover {
+	color:#9E9E9E;
+}
+/* Footer css ends */
